@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from "@/components/ui/button";
+import Image from "next/image";
 
 const Introduction = () => {
     return (
-        <div className='flex'>
+        <section className='flex'>
             <div className='flex flex-row mt-24 ml-20 mr-20 space-between gap-48 items-cente'>
                 <div className='flex flex-col h-fit'>
                     <h1 className='text-6xl font-bold tracking-tighter'>Hi, I’m Capybarara 👋</h1>
@@ -17,9 +18,9 @@ const Introduction = () => {
                         <Button/>
                     </div>
                 </div>
-                <img className='' src="capybara.svg" alt="capybara"/>
+                <Image src='capybara.svg' alt='capybara'/>
             </div>
-        </div>
+        </section>
     );
 };
 
